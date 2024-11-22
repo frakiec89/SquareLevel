@@ -10,6 +10,9 @@ while (true)
 
     SquareEquation square = Calculator.GetSquareEquation(a, b, c); // статичный метод 
 
+    Console.WriteLine
+        ($"Уровнение {square.Templite.A}X^2 + {square.Templite.B}X + {square.Templite.C}=0");
+
     if(square.IsRadix == false)
     {
         Console.WriteLine("Корней нет");
@@ -17,8 +20,8 @@ while (true)
     }
     else
     {
-        Console.WriteLine($"Корень 1 {square.radix1}");
-        Console.WriteLine($"Корень 2 {square.radix2}");
+        Console.WriteLine($"Корень 1 {square.Radix1}");
+        Console.WriteLine($"Корень 2 {square.Radix2}");
     }
 }
 
